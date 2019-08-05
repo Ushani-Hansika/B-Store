@@ -35,7 +35,12 @@ public class FeedBack extends AppCompatActivity {
                 startActivity(i);
             }
         });
-    }}
+    }
+
+   public void onRestart(){
+        super.onRestart();
+   }
+}
 
 
 
