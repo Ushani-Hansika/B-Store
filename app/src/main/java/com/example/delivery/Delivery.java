@@ -1,20 +1,17 @@
 package com.example.delivery;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.ButtonBarLayout;
-
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.bstore.Payment;
 import com.example.bstore.R;
 
 
-public class MainActivity extends AppCompatActivity {
+public class Delivery extends AppCompatActivity {
 
 
     Button btn1;
@@ -48,7 +45,15 @@ public class MainActivity extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this,CashPayments.class);
+                Intent i = new Intent(com.example.delivery.Delivery.this, Cashpayments.class);
+                startActivity(i);
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(com.example.delivery.Delivery.this, Payment.class);
                 startActivity(i);
             }
         });
