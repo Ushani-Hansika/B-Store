@@ -9,7 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PaymentSuccess"></activity>
+        <activity android:name=".Thankyou"></activity>
+        <activity android:name=".Cashpayments" />
+        <activity android:name=".Delivery" />
+        <activity android:name=".Horror" />
+        <activity android:name=".Crime" />
+        <activity android:name=".Adventure" />
+        <activity android:name=".WishList" />
+        <activity android:name=".Romance" />
+        <activity android:name=".Comics" />
+        <activity android:name=".PaymentSuccess" />
         <activity android:name=".Payment" />
         <activity android:name=".Comments" />
         <activity android:name=".FeedBack" />
